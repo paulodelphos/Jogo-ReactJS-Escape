@@ -9,7 +9,6 @@ function App() {
   return (
     <div className="App">
       <div 
-        className="App-header"
         style={{
           position: 'relative',
           width: GAME_SIZE,

@@ -9,8 +9,8 @@ const Hero = () => {
         <div
         style={{
             position: 'absolute',
-            bottom: 48 * 5,
-            left: 0,
+            bottom: TILE_SIZE * 5,
+            left: TILE_SIZE,
             width: TILE_SIZE,
             height: 100,
             backgroundImage: "url(./assets/Hero.png) ",
