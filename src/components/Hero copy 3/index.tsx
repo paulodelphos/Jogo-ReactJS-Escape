@@ -1,4 +1,4 @@
-import { isAbsolute } from 'path/posix';
+//import { isAbsolute } from 'path/posix';
 import React from 'react';
 import {TILE_SIZE} from '../../settings/constants';
 

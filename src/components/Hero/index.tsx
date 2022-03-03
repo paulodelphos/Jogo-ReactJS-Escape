@@ -4,13 +4,22 @@ import {HEAD_OFFSET, TILE_SIZE} from '../../settings/constants';
 
 import './index.css';
 
+const inicialPosition = {
+    x: 15,
+    y: 15
+};
+
 const Hero = () => {
+    const heroPositionState = React.useState(inicialPosition);
+    const positionState = heroPositionState[0];
+    const positionUpdateState = heroPositionState[1];
+
     return (
         <div
         style={{
             position: 'absolute',
-            bottom: TILE_SIZE * 5,
-            left: TILE_SIZE,
+            bottom: TILE_SIZE * positionState.x,
+            left: TILE_SIZE * positionState.y,
             width: TILE_SIZE,
             height: TILE_SIZE + HEAD_OFFSET,
             backgroundImage: "url(./assets/Hero.png) ",

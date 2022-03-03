@@ -1,25 +1,25 @@
-//import { isAbsolute } from 'path/posix';
+import { isAbsolute } from 'path/posix';
 import React from 'react';
 import {TILE_SIZE} from '../../settings/constants';
 
 import './index.css';
 
-const Hero = () => {
+const Chest = () => {
     return (
         <div
         style={{
             position: 'absolute',
-            bottom: TILE_SIZE * 5,
-            left: TILE_SIZE,
+            bottom: TILE_SIZE *3,
+            left: TILE_SIZE * 6,
             width: TILE_SIZE,
             height: 100,
-            backgroundImage: "url(./assets/Hero.png) ",
+            backgroundImage: "url(./assets/CHEST.png) ",
             backgroundRepeat: "no-repeat",
-            animation: "hero-animation 1s steps(4) infinite"
+            animation: "chest-animation 1s steps(3) infinite"
         }}
         />
 
     )
 }
 
-export default Hero;
+export default Chest;

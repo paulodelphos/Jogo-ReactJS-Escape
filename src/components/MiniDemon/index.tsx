@@ -10,7 +10,7 @@ const MiniDemon = () => {
         style={{
             position: 'absolute',
             bottom: TILE_SIZE * 2,
-            left: TILE_SIZE,
+            left: TILE_SIZE * 3,
             width: TILE_SIZE,
             height: TILE_SIZE + HEAD_OFFSET,
             backgroundImage: "url(./assets/MINI-DEMON.png) ",
